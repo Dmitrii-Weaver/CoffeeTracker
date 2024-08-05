@@ -1,27 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react'
+import DefaultPage from './pages/DefaultPage';
 
 function App() {
   return (
     <ChakraProvider>
-
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Coffee tracker app
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <DefaultPage/>
     </ChakraProvider>
   );
 }
